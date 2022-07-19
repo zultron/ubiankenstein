@@ -1,0 +1,5 @@
+gcc-10-ubuntu-compat (0.0.1-1) focal; urgency=low
+
+  * Initial package
+
+ -- John Morris <john@zultron.com>  Tue, 19 Jul 2022 11:53:31 -0500

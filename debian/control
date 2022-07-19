@@ -1,0 +1,13 @@
+Source: gcc-10-ubuntu-compat
+Section: misc
+Priority: extra
+Maintainer: Zultron <john@zutron.com>
+Build-Depends:
+    debhelper (>= 10),
+Standards-Version: 2.1.0
+
+Package: gcc-10-focal-compat
+Provides:  linux-compiler-gcc-10-x86
+Depends:  gcc-10
+Architecture: any
+Description: Hack to allow Debian linux-headers-* packages to install on Ubuntu
