@@ -1,4 +1,4 @@
-# Ubiankenstein:  Install Debian kernels on Ubuntu OS
+# `ubiankenstein`:  Install Debian kernels in Ubuntu
 
 This repo builds an Ubuntu `.deb` package for Ubuntu 20.04 Focal that
 enables installing Debian 11 Bullseye kernel packages (or any
@@ -21,6 +21,7 @@ Ubuntu packages that satisfy Debian package requirements:
 
 Build the package, if needed.
 
+    sudo apt-get install dpkg-dev debhelper
     dpkg-buildpackage -uc -b
     cd ..
 
@@ -28,7 +29,7 @@ Install the package, refresh APT repos, and install the RT_PREEMPT
 kernel.
 
     # Install the package
-    sudo apt-get install ./ubiankenstein_0.0.1-1_amd64.deb
+    sudo apt-get install ./ubiankenstein_*_amd64.deb
     # Update APT package cache
     sudo apt-get update
     # Install Linux RT_PREEMPT kernel and headers
