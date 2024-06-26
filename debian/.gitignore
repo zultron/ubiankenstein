@@ -1,4 +1,9 @@
 /.debhelper/
 /debhelper-build-stamp
 /files
-/gcc-10-focal-compat*
+/ubiankenstein*
+!/ubiankenstein.install
+/extras/crls.d
+/extras/private-keys-v1.d
+/extras/*.gpg
+!/extras/bullseye.gpg

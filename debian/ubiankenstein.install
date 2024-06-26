@@ -1,0 +1,3 @@
+debian/extras/bullseye_kernels /etc/apt/prefences.d/
+debian/extras/bullseye.sources.list /etc/apt/sources.list.d/
+debian/extras/bullseye.gpg /etc/apt/keyrings/

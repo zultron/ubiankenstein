@@ -1,0 +1,6 @@
+# Pin Debian packages with low priority
+# http://deb.debian.org/debian/dists/bullseye/main/binary-amd64/Release
+# Origin: Debian
+Package: *
+Pin: release o=Debian
+Pin-Priority: -10
