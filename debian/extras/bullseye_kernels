@@ -1,6 +1,33 @@
-# Pin Debian packages with low priority
-# http://deb.debian.org/debian/dists/bullseye/main/binary-amd64/Release
+# Pin Debian packages
 # Origin: Debian
+
+# Don't allow any Debian packages...
 Package: *
 Pin: release o=Debian
 Pin-Priority: -10
+
+# ...except for kernel packages...
+Package: linux-image-rt-amd64
+Pin: release o=Debian
+Pin-Priority: 1000
+
+Package: linux-image-*-rt-*
+Pin: release o=Debian
+Pin-Priority: 1000
+
+# ...and kernel header packages
+Package: linux-headers-rt-amd64
+Pin: release o=Debian
+Pin-Priority: 1000
+
+Package: linux-headers-*-rt-amd64
+Pin: release o=Debian
+Pin-Priority: 1000
+
+Package: linux-headers-*-common-rt
+Pin: release o=Debian
+Pin-Priority: 1000
+
+Package: linux-kbuild-*
+Pin: release o=Debian
+Pin-Priority: 1000

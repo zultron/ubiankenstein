@@ -1,3 +1,9 @@
+ubiankenstein (0.0.2-1) unstable; urgency=medium
+
+  * Fix package pinning configuration
+
+ -- John Morris <john@zultron.com>  Tue, 10 Dec 2024 15:27:26 -0600
+
 ubiankenstein (0.0.1-1) focal; urgency=low
 
   * Initial package
